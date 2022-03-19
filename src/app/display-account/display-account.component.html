@@ -1,0 +1,23 @@
+<br>
+<div class="container">
+    <div class="row" >
+    <div class="col-xs-8">
+        <div  *ngIf="accounts" class="panel panel-default">
+            <div class="panel-heading">
+              {{accounts.name}}
+            </div>
+            
+           <button class="btn btn-default" (click)="onSetTo('Active')"> set To Active</button>
+           <button class="btn btn-default" (click)="onSetTo('Inactive')"> set To Inactive</button>
+           <button class="btn btn-default" (click)="onSetTo('Unknown')"> set To Unknown</button>
+            <div class="panel-body">
+            <p  style="color:red;">{{accounts.type}}</p>
+            
+            <!-- <em *ngIf="ascholar.role==='Student'" style="color: blue;">{{ascholar.email}}</em> -->
+        </div>    
+        </div> 
+    </div>
+   </div>
+ 
+</div>
+ 

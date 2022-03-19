@@ -1,0 +1,7 @@
+<app-add-account></app-add-account>
+<app-display-account
+
+*ngFor="let acc of acounts let i=index"
+[id]="i"
+[accounts]="acc"
+></app-display-account>
